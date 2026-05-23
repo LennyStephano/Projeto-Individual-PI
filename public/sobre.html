@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gunners | Sobre Mim</title>
+
+  <script src="./js/sessao.js"></script>
+
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="icon" href="./assets/icon/favicon2.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <style>
+    
+    .sobre-hero {
+      min-height: 65vh;
+      color: white;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://i.pinimg.com/736x/f9/41/5a/f9415aae20e36297568d6fe191886df6.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sobre-hero-content {
+      width: 60%;
+      text-align: center;
+    }
+
+    .sobre-hero-content h2 {
+      font-size: 48px;
+      color: #e50914;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+    }
+
+    .sobre-hero-content p {
+      font-size: 22px;
+      line-height: 1.9;
+      color: #ccc;
+    }
+
+  
+    .sobre-secao {
+      background: radial-gradient(circle at 85% 20%, rgba(229, 9, 20, 0.08) 0%, #0a0a0a 60%);
+      color: white;
+      padding: 80px 0;
+      border-top: 3px solid;
+      border-image: linear-gradient(to right, #ffd700, #e50914, #ffd700) 1;
+    }
+
+    .sobre-secao.alt {
+      background: radial-gradient(circle at 15% 80%, rgba(255, 215, 0, 0.05) 0%, #111 60%);
+      border-top: 3px solid;
+      border-image: linear-gradient(to right, #e50914, #ffd700, #e50914) 1;
+    }
+
+    .sobre-container {
+      display: flex;
+      width: 80%;
+      margin: auto;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .sobre-texto {
+      flex: 1;
+    }
+
+    .sobre-texto h2 {
+      font-size: 34px;
+      color: #e50914;
+      margin-top: 0;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .sobre-texto p {
+      font-size: 19px;
+      line-height: 1.8;
+      color: #bbb;
+    }
+
+    .sobre-imagem {
+      flex: 1;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .sobre-imagem img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+      border: 2px solid #222;
+      transition: transform 0.5s ease;
+    }
+
+    .sobre-imagem.guitarra-img img {
+      object-fit: contain;
+      background-color: #111;
+    }
+
+    .sobre-imagem:hover img {
+      transform: scale(1.03);
+    }
+
+  
+    .show-galeria {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .show-galeria img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #222;
+      transition: transform 0.5s ease;
+    }
+
+    .show-galeria img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 class="titulo">Gunners</h1>
+      <ul class="navbar">
+        <li>
+          <a href="index.html">Inicial</a>
+        </li>
+        <li>|</li>
+        <li class="agora">
+          <a href="#">Sobre Mim</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="cadastro.html">Cadastro</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+ 
+  <div class="sobre-hero">
+    <div class="sobre-hero-content">
+      <h2>Sobre Mim</h2>
+      <p>Olá, me chamo Lenny e o Guns N' Roses está presente na minha vida desde os primeiros momentos de que tenho memórias. Me lembro dos passeios de carro com o meu pai, onde ele tocava as músicas e nós curtíamos. Por passarmos pouco tempo juntos, essas memórias me marcaram e me influenciam até hoje, e foram o que me fizeram começar a tocar guitarra.</p>
+    </div>
+  </div>
+
+
+  <div class="sobre-secao">
+    <div class="sobre-container">
+      <div class="sobre-texto">
+        <h2>Meus Discos</h2>
+        <p>Ouvindo o Guns N' Roses, descobri mais sobre o mundo dos discos de vinil e CDs. Aquela sonoridade me fez querer ir além do digital e ir atrás de colec e um significado espionar alguns álbuns físicos da banda, e a experiência de ouvir eles dessa maneira é única.</p>
+      </div>
+      <div class="sobre-imagem">
+        <img src="./assets/imgs/IMG_3800.jpg" alt="Coleção de discos Guns N' Roses">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="sobre-secao alt">
+    <div class="sobre-container">
+      <div class="sobre-imagem">
+        <img src="./assets/imgs/IMG_3900.jpg" alt="Tatuagem em homenagem ao Guns N' Roses">
+      </div>
+      <div class="sobre-texto">
+        <h2>Minha Tatuagem</h2>
+        <p>A banda marcou tanto a minha vida que decidi eternizar isso na pele. Essa tatuagem é uma homenagem ao Guns N' Roses e representa tudo que a banda significa pra mim — as memórias com meu pai, a música que me moldou e tudo que carrego comigo.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="sobre-secao">
+    <div class="sobre-container">
+      <div class="sobre-texto">
+        <h2>Minhas Guitarras</h2>
+        <p>O Slash me fez querer tocar guitarra, e com o tempo fui construindo minha própria coleção. O destaque vai para a minha Les Paul, inspirada na icônica guitarra do Slash — aquela que faz chorar em cada solo. Pegar ela e conseguir tocar esse solo hoje é uma experiência especial.</p>
+      </div>
+      <div class="sobre-imagem guitarra-img">
+        <img src="./assets/imgs/IMG_4000.jpg" alt="Minhas guitarras - destaque para a Les Paul">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="sobre-secao alt">
+    <div class="sobre-container">
+      <div class="sobre-texto">
+        <h2>O Show</h2>
+        <p>Depois de anos ouvindo, admirando e sonhando, finalmente pude ir ao show do Guns N' Roses e conhecer meus ídolos de perto. Sentir aquela energia ao vivo, ouvir as músicas que fizeram parte minha vida no estádio... Foi um dos momentos mais marcantes que já vivi.</p>
+      </div>
+      <div class="show-galeria">
+        <img src="./assets/imgs/IMG_4100.jpg" alt="Show do Guns N' Roses">
+        <img src="./assets/imgs/IMG_4200.jpg" alt="Show do Guns N' Roses - momento especial">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <h4>Feito com muito rock SPTech &copy; 2026</h4>
+    </div>
+  </div>
+</body>
+
+</html>
